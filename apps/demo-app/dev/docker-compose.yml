@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  web:
+    image: demo-app:dev
+    container_name: demo-app-dev
+    restart: always
+    ports:
+      - "8081:80"        # 8081 sur l'hôte pour ne pas entrer en conflit avec Jenkins (8080)
+    environment:
+      - NODE_ENV=development
