@@ -37,9 +37,9 @@ pipeline {
                     def composeFile = "${BASE_DIR}/${APP_NAME}/${envName}/docker-compose.yml"
 
                     sh """
-                      echo '[+] Déploiement ${APP_NAME} sur ${envName}...'
-                      docker-compose -f ${composeFile} pull || true
-                      docker-compose -f ${composeFile} up -d --build
+                      echo '[+] Deploiement ${APP_NAME} sur ${envName}...'
+                      docker compose -f ${composeFile} pull || true
+                      docker compose -f ${composeFile} up -d --build
                     """
 
                     // Option : MAJ Jira si la clé est dans le dernier commit
