@@ -1,7 +1,0 @@
-url: "http://<IP_HOST>:8085"
-user: "admin"
-token: "CHANGE_ME_TOKEN_OR_PASSWORD"
-transitions:
-  DEV_DEPLOYE: "31"
-  RECETTE_DEPLOYE: "41"
-  PROD_DEPLOYE: "51"
